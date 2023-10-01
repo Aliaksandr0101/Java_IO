@@ -10,7 +10,7 @@ public class Example {
         System.out.println("Please enter the number to sum");
         while (true){
             consoleLine = scanner.next();
-            
+
             if (consoleLine.equalsIgnoreCase("result")) {
                 break;
             }
@@ -23,6 +23,7 @@ public class Example {
             }
         }
         scanner.close();
+        System.out.println("Sum your numbers = " + sum);
         System.out.println("Sum your numbers = " + sum);
 
     }
