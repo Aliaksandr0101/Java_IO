@@ -4,25 +4,27 @@ import java.util.Scanner;
 public class Example {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        double sum = 0;
+        String consoleLine;
         double number;
-        String line;
-        System.out.println("You enter the number to sum");
-        while (true) {
-            line = scanner.next();
-            if (line.equals("result")) {
+        double sum = 0;
+        System.out.println("Please enter the number to sum");
+        while (true){
+            consoleLine = scanner.next();
+            
+            if (consoleLine.equalsIgnoreCase("result")) {
                 break;
             }
 
             try {
-                number = Double.parseDouble(line);
+                number = Double.parseDouble(consoleLine);
                 sum += number;
-            } catch (NumberFormatException e) {
-                System.err.println("You did not enter a number. Enter the number or 'result' again to get the result.");
+            } catch(NumberFormatException e) {
+                System.out.println("You did not enter a number. Try again or enter the 'result' to get the total.");
             }
         }
-         System.out.println("sum = " + sum);
-        
+        scanner.close();
+        System.out.println("Sum your numbers = " + sum);
+
     }
     }
 
