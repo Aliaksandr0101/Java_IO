@@ -1,18 +1,33 @@
 package IO_Java;
 
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class ExampleTwo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int lengthConsoleLine;
         String consoleLine;
+        System.out.println("Please enter any string");
 
-        while (true){
+        while (true) {
             consoleLine = scanner.nextLine();
-            if (consoleLine.equalsIgnoreCase("result"));
-            break;
+            if (consoleLine.equalsIgnoreCase("result")) {
+                break;
+            }
 
-            
+            lengthConsoleLine = consoleLine.length();
+
+            System.out.println("Output using with println. Length your string = " + lengthConsoleLine);
+            System.out.printf("Output using with printf. Length your string = %d", lengthConsoleLine);
+            try(PrintWriter pw = new PrintWriter(System.out))
+            {
+                pw.println("\nOutput using with printWriter" + lengthConsoleLine);
+            }
+
+
+        }
+
         }
 
         /*Scanner scanner = new Scanner(System.in);
@@ -46,4 +61,4 @@ public class ExampleTwo {
 */
 
     }
-}
+
