@@ -25,7 +25,6 @@ public class Example {
         scanner.close();
         System.out.println("Sum your numbers = " + sum);
 
-
     }
     }
 

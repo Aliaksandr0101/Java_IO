@@ -17,20 +17,17 @@ public class ExampleTwo {
             lengthConsoleLine = consoleLine.length();
             lengthLineArray.add(lengthConsoleLine);
             if (consoleLine.equalsIgnoreCase("result")) {
-                scanner.close();
+
                 System.out.println("Output the length of your lines");
                 for (int i = 0; i < lengthLineArray.size() ; i++) {
                     System.out.println("Output using with println. Length your string = " + lengthLineArray.get(i));
                     System.out.printf("Output using with printf. Length your string = %d\n", lengthLineArray.get(i));
-                }
-                for (int line : lengthLineArray) {
-                    writer.println("Output using with printWriter. Length your string = " + line);
+                    writer.println("Output using with printWriter. Length your string = " + lengthLineArray.get(i));
                 }
                 writer.flush();
             }
         }
     }
-
     }
 
 
