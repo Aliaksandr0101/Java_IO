@@ -5,7 +5,7 @@ import java.io.File;
 public class ExampleThree {
     public static void main(String[] args) {
         // Замените путь на путь к вашей выбранной папке
-        String folderPath = "путь_к_вашей_папке";
+        String folderPath = "C:\\Users\\user\\Desktop\\OverOne\\ExampleThreeJavaIO";
 
         File folder = new File(folderPath);
 
