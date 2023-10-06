@@ -1,5 +1,7 @@
 package IO_Java;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.io.File;
 
 public class One {
@@ -12,6 +14,7 @@ public class One {
                     System.out.println(item.getName() + " this folder");
                 }else{
                     System.out.println(item.getName() + " this file");
+                    System.out.println();
                 }
             }
         }
