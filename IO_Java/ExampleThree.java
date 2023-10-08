@@ -12,10 +12,10 @@ public class ExampleThree {
                     System.out.printf("\n%s - name of the folder inside the first folder. Folder size = %d байт.\n",
                             itemFirstFolder.getName(), itemFirstFolder.length());
                     System.out.println("Belongs to the directory: " + itemFirstFolder.isDirectory() + "\n");
-                    for (File elementInsideItem : itemFirstFolder.listFiles()) {
+                    for (File elementSecondFolder : itemFirstFolder.listFiles()) {
                         System.out.printf("%s - name of the file inside the first folder. File size = %d байт.\n",
-                                elementInsideItem.getName(), elementInsideItem.length());
-                        System.out.println("Belongs to the directory: " + elementInsideItem.isDirectory() + "\n");
+                                elementSecondFolder.getName(), elementSecondFolder.length());
+                        System.out.println("Belongs to the directory: " + elementSecondFolder.isDirectory() + "\n");
                     }
                 } else {
                     System.out.printf("%s - name of the file inside the first folder. File size = %d байт.\n",
