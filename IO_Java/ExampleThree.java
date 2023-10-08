@@ -7,20 +7,20 @@ public class ExampleThree {
         String thePathToTheFile = "C:\\Users\\user\\Desktop\\OverOne\\ExampleThreeJavaIO";
         File dir = new File(thePathToTheFile);
         if (dir.isDirectory() & dir.exists()) {
-            for (File item : dir.listFiles()) {
-                if (item.isDirectory()) {
+            for (File itemFirstFolder : dir.listFiles()) {
+                if (itemFirstFolder.isDirectory()) {
                     System.out.printf("\n%s - name of the folder inside the first folder. Folder size = %d байт.\n",
-                            item.getName(), item.length());
-                    System.out.println("Belongs to the directory: " + item.isDirectory() + "\n");
-                    for (File elementInsideItem : item.listFiles()) {
+                            itemFirstFolder.getName(), itemFirstFolder.length());
+                    System.out.println("Belongs to the directory: " + itemFirstFolder.isDirectory() + "\n");
+                    for (File elementInsideItem : itemFirstFolder.listFiles()) {
                         System.out.printf("%s - name of the file inside the first folder. File size = %d байт.\n",
                                 elementInsideItem.getName(), elementInsideItem.length());
                         System.out.println("Belongs to the directory: " + elementInsideItem.isDirectory() + "\n");
                     }
                 } else {
                     System.out.printf("%s - name of the file inside the first folder. File size = %d байт.\n",
-                            item.getName(), item.length());
-                    System.out.println("Belongs to the directory: " + item.isDirectory() + "\n");
+                            itemFirstFolder.getName(), itemFirstFolder.length());
+                    System.out.println("Belongs to the directory: " + itemFirstFolder.isDirectory() + "\n");
                 }
             }
         }
