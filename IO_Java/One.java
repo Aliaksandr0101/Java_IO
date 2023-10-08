@@ -13,12 +13,16 @@ public class One {
         if (dir.isDirectory()) {
             for (File item : dir.listFiles()){
                 if (item.isDirectory()) {
-                    System.out.println(item.getName() + " - This is the name of the folder inside the first folder.\n");
+                    System.out.printf("\n%s - name of the folder inside the first folder. Folder size = %d байт.\n",
+                            item.getName(), item.length());
                     for (File elementInsideItem : item.listFiles()) {
-                        System.out.println(elementInsideItem.getName() + " - This is the name of the file inside the second folder.\n");
+                        System.out.printf("%s - name of the file inside the first folder. File size = %d байт.\n",
+                                elementInsideItem.getName(), elementInsideItem.length());
                     }
                 }else{
-                    System.out.println(item.getName() + " - This is the name of the file inside the first folder.\n");
+                    System.out.printf("%s - name of the file inside the first folder. File size = %d байт.\n",
+                            item.getName(), item.length());
+
                 }
             }
         }
