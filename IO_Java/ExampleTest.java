@@ -27,6 +27,7 @@ public class ExampleTest {
             System.out.println("Чтение " + n / 2 + " размещенных в конце массива");
             if (f.read(b, n / 2, n / 2) != (n / 2)) {
                 System.err.println("Нельзя прочитать " + n / 2 + " байтов");
+                System.out.println();
             }
             System.out.println(new String(b, 0, b.length));
             System.out.println("\n Все еще доступно: " + f.available());
