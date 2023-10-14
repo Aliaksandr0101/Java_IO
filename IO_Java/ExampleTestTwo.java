@@ -1,7 +1,6 @@
 package IO_Java;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -14,7 +13,15 @@ public class ExampleTestTwo {
             int count = inputStream.read(buffer);
             outputStream.write(buffer,0,count);
         }
+        FileInputStream fileIn = new FileInputStream("C:\\Users\\user\\Desktop\\OverOne\\ExampleThreeJavaIO\\Fox.jpg");
+        FileOutputStream fileOutput = new FileOutputStream("C:\\Users\\user\\Desktop\\OverOne\\ExampleThreeJavaIO\\FoxTwo.jpg");
+        while (fileIn.available()>0){
+            int oneByte = fileIn.read();
+            fileOutput.write(oneByte);
+        }
         inputStream.close();
         outputStream.close();
+        fileIn.close();
+        fileOutput.close();
     }
 }
