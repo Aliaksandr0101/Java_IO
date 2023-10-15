@@ -23,5 +23,6 @@ public class ExampleTestTwo {
         outputStream.close();
         fileIn.close();
         fileOutput.close();
+        System.out.println();
     }
 }
