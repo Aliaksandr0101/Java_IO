@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class ExampleFour {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the length of the writer string in file");
+        System.out.println("Please enter the length of the writer string in file");
         int lengthString = scanner.nextInt();
         String stringConsole;
 
