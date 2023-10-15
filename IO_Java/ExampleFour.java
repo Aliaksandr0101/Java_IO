@@ -28,6 +28,7 @@ public class ExampleFour {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        scanner.close();
 
         System.out.println("File writing completed");
     }
