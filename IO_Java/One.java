@@ -29,6 +29,7 @@ public class One {
         } else {
             System.out.println("Указанная папка не существует или не является директорией.");
             System.out.println("Указанная папка не существует или не является директорией.");
+            System.out.println();
         }
     }
         }
