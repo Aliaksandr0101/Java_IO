@@ -37,6 +37,7 @@ public class ProgramThree {
         ds2.close();
         //3. Вывести массив arrayInt2 для контроля
         System.out.println("Array arrayInt2: ");
+        System.out.println();
         for (int i = 0; i < arrayInt2.length ; i++) {
             System.out.println(arrayInt2[i]);
 
