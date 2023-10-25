@@ -1,12 +1,14 @@
 package IO_Java;
 
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class ExampleFive {
     public static void main(String[] args) {
-        // Укажите путь к файлу, который вы хотите обработать
-        String filePath = "путь_к_вашему_файлу.txt";
 
+        String filePath = "C:\\Users\\user\\Desktop\\OverOne\\Java_IO\\production\\Java_IO\\ExampleFive.txt";
         try {
-            // Чтение данных из файла
             FileReader reader = new FileReader(filePath);
             int charCount;
             int aCount = 0;
@@ -18,13 +20,12 @@ public class ExampleFive {
             }
             reader.close();
 
-            // Запись количества букв "а" обратно в файл
             FileWriter writer = new FileWriter(filePath);
-            writer.write("Количество букв 'а' в файле: " + aCount);
+            writer.write("Number of letters 'a' in the file: " + aCount);
             writer.close();
 
-            System.out.println("Количество букв 'а' в файле: " + aCount);
-            System.out.println("Данные успешно записаны обратно в файл.");
+            System.out.println("Number of letters 'a' in the file: " + aCount);
+            System.out.println("The data was successfully written back to the file.");
         } catch (IOException e) {
             e.printStackTrace();
         }
