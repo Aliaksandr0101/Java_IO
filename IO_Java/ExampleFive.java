@@ -26,7 +26,7 @@ public class ExampleFive {
 
             System.out.println("Number of letters 'a' in the file: " + aCount);
             System.out.println("The data was successfully written back to the file.");
-            
+
         } catch (IOException e) {
             e.printStackTrace();
         }
