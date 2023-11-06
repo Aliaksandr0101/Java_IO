@@ -1,7 +1,4 @@
 package IO_Java;
-
-import org.w3c.dom.ls.LSOutput;
-
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
