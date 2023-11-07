@@ -10,7 +10,6 @@ public class BufferedReaderDemo {
             String str;
             while( (str = bufferedReader.readLine()) != null) {
                 System.out.println(str);
-                System.out.println();
             }
         } catch (IOException e) {
             e.printStackTrace();
