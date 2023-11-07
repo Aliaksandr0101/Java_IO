@@ -16,7 +16,7 @@ public class ExampleSix {
             String phoneNumber = scanner.nextLine();
 
             scanner.close();
-            
+
             System.out.printf(" User surname: %s%n User name: %s%n User phone number: %s%n", surname, name, phoneNumber);
 
         }
