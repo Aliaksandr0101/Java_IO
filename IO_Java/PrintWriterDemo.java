@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 
 public class PrintWriterDemo {
     public static void main(String[] args) throws FileNotFoundException {
-        File file = new File("C:\\Users\\user\\Desktop\\OverOne\\Java_IO\\production\\PrintWriter.txt");
+        File file = new File("C:\\Users\\user\\Desktop\\OverOne\\Java_IO\\PrintWriter.txt");
         PrintWriter printWriter = new PrintWriter(file);
         printWriter.println("Super");
         printWriter.printf("%n Soup %d", 45);
