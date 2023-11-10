@@ -10,6 +10,7 @@ public class PrintWriterDemo {
         PrintWriter printWriter = new PrintWriter(file);
         printWriter.println("Super");
         printWriter.printf("%n Soup %d", 45);
+        printWriter.print("hghbh");
         printWriter.close();
     }
 }
