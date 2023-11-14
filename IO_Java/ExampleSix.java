@@ -13,7 +13,7 @@ public class ExampleSix {
             String surname = scanner.nextLine();
 
             System.out.print("Please enter your phone number: ");
-        System.out.println();
+        
             String phoneNumber = scanner.nextLine();
 
             scanner.close();
